@@ -1,0 +1,412 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BE13785820DCEAEA00A606F5 /* PZFileUploader.m in Sources */ = {isa = PBXBuildFile; fileRef = BE13785720DCEAEA00A606F5 /* PZFileUploader.m */; };
+		BE13785B20DCEB0E00A606F5 /* PZFileTypeBase.m in Sources */ = {isa = PBXBuildFile; fileRef = BE13785A20DCEB0E00A606F5 /* PZFileTypeBase.m */; };
+		BE13785E20DCF4E600A606F5 /* PZUploadToken.m in Sources */ = {isa = PBXBuildFile; fileRef = BE13785D20DCF4E600A606F5 /* PZUploadToken.m */; };
+		BEC651D120AE7C6A009ABDD1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BEC651D020AE7C6A009ABDD1 /* AppDelegate.m */; };
+		BEC651D420AE7C6A009ABDD1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEC651D320AE7C6A009ABDD1 /* ViewController.m */; };
+		BEC651D920AE7C6B009ABDD1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEC651D820AE7C6B009ABDD1 /* Assets.xcassets */; };
+		BEC651DC20AE7C6B009ABDD1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEC651DA20AE7C6B009ABDD1 /* LaunchScreen.storyboard */; };
+		BEC651DF20AE7C6B009ABDD1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BEC651DE20AE7C6B009ABDD1 /* main.m */; };
+		FFFFF7E6BA3F1A4975537AC8 /* libPods-PZFileUploaderDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F2914EB07D7E60C74A37CB00 /* libPods-PZFileUploaderDemo.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		81AA3A97F222F7363B08B1AE /* Pods-PZFileUploaderDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PZFileUploaderDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-PZFileUploaderDemo/Pods-PZFileUploaderDemo.release.xcconfig"; sourceTree = "<group>"; };
+		B37A05DBE70ACF38CC3E9F97 /* Pods-PZFileUploaderDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PZFileUploaderDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PZFileUploaderDemo/Pods-PZFileUploaderDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		BE13785620DCEAEA00A606F5 /* PZFileUploader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PZFileUploader.h; sourceTree = "<group>"; };
+		BE13785720DCEAEA00A606F5 /* PZFileUploader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PZFileUploader.m; sourceTree = "<group>"; };
+		BE13785920DCEB0E00A606F5 /* PZFileTypeBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PZFileTypeBase.h; sourceTree = "<group>"; };
+		BE13785A20DCEB0E00A606F5 /* PZFileTypeBase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PZFileTypeBase.m; sourceTree = "<group>"; };
+		BE13785C20DCF4E600A606F5 /* PZUploadToken.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PZUploadToken.h; sourceTree = "<group>"; };
+		BE13785D20DCF4E600A606F5 /* PZUploadToken.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PZUploadToken.m; sourceTree = "<group>"; };
+		BEC651CC20AE7C6A009ABDD1 /* PZFileUploaderDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PZFileUploaderDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEC651CF20AE7C6A009ABDD1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BEC651D020AE7C6A009ABDD1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BEC651D220AE7C6A009ABDD1 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		BEC651D320AE7C6A009ABDD1 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		BEC651D820AE7C6B009ABDD1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BEC651DB20AE7C6B009ABDD1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BEC651DD20AE7C6B009ABDD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BEC651DE20AE7C6B009ABDD1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F2914EB07D7E60C74A37CB00 /* libPods-PZFileUploaderDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PZFileUploaderDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BEC651C920AE7C6A009ABDD1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFFFF7E6BA3F1A4975537AC8 /* libPods-PZFileUploaderDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		382E427A3C74A29F64525536 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F2914EB07D7E60C74A37CB00 /* libPods-PZFileUploaderDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BE13785520DCEACE00A606F5 /* Uploader */ = {
+			isa = PBXGroup;
+			children = (
+				BE13785620DCEAEA00A606F5 /* PZFileUploader.h */,
+				BE13785720DCEAEA00A606F5 /* PZFileUploader.m */,
+				BE13785C20DCF4E600A606F5 /* PZUploadToken.h */,
+				BE13785D20DCF4E600A606F5 /* PZUploadToken.m */,
+				BE13785920DCEB0E00A606F5 /* PZFileTypeBase.h */,
+				BE13785A20DCEB0E00A606F5 /* PZFileTypeBase.m */,
+			);
+			path = Uploader;
+			sourceTree = "<group>";
+		};
+		BE23289D20DCD40F00EFB278 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				BEC651D820AE7C6B009ABDD1 /* Assets.xcassets */,
+				BEC651DA20AE7C6B009ABDD1 /* LaunchScreen.storyboard */,
+				BEC651DD20AE7C6B009ABDD1 /* Info.plist */,
+				BEC651DE20AE7C6B009ABDD1 /* main.m */,
+			);
+			name = "Support Files";
+			sourceTree = "<group>";
+		};
+		BEC651C320AE7C6A009ABDD1 = {
+			isa = PBXGroup;
+			children = (
+				BEC651CE20AE7C6A009ABDD1 /* PZFileUploaderDemo */,
+				BEC651CD20AE7C6A009ABDD1 /* Products */,
+				C97FF30F802CA0BBD716987B /* Pods */,
+				382E427A3C74A29F64525536 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BEC651CD20AE7C6A009ABDD1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BEC651CC20AE7C6A009ABDD1 /* PZFileUploaderDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BEC651CE20AE7C6A009ABDD1 /* PZFileUploaderDemo */ = {
+			isa = PBXGroup;
+			children = (
+				BEC651CF20AE7C6A009ABDD1 /* AppDelegate.h */,
+				BEC651D020AE7C6A009ABDD1 /* AppDelegate.m */,
+				BEC651D220AE7C6A009ABDD1 /* ViewController.h */,
+				BEC651D320AE7C6A009ABDD1 /* ViewController.m */,
+				BE13785520DCEACE00A606F5 /* Uploader */,
+				BE23289D20DCD40F00EFB278 /* Support Files */,
+			);
+			path = PZFileUploaderDemo;
+			sourceTree = "<group>";
+		};
+		C97FF30F802CA0BBD716987B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B37A05DBE70ACF38CC3E9F97 /* Pods-PZFileUploaderDemo.debug.xcconfig */,
+				81AA3A97F222F7363B08B1AE /* Pods-PZFileUploaderDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BEC651CB20AE7C6A009ABDD1 /* PZFileUploaderDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BEC651E220AE7C6B009ABDD1 /* Build configuration list for PBXNativeTarget "PZFileUploaderDemo" */;
+			buildPhases = (
+				A35C2DED17F5EAD5A20934EE /* [CP] Check Pods Manifest.lock */,
+				BEC651C820AE7C6A009ABDD1 /* Sources */,
+				BEC651C920AE7C6A009ABDD1 /* Frameworks */,
+				BEC651CA20AE7C6A009ABDD1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PZFileUploaderDemo;
+			productName = PZFileUploaderDemo;
+			productReference = BEC651CC20AE7C6A009ABDD1 /* PZFileUploaderDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BEC651C420AE7C6A009ABDD1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = Pany;
+				TargetAttributes = {
+					BEC651CB20AE7C6A009ABDD1 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+				};
+			};
+			buildConfigurationList = BEC651C720AE7C6A009ABDD1 /* Build configuration list for PBXProject "PZFileUploaderDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BEC651C320AE7C6A009ABDD1;
+			productRefGroup = BEC651CD20AE7C6A009ABDD1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BEC651CB20AE7C6A009ABDD1 /* PZFileUploaderDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BEC651CA20AE7C6A009ABDD1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEC651DC20AE7C6B009ABDD1 /* LaunchScreen.storyboard in Resources */,
+				BEC651D920AE7C6B009ABDD1 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A35C2DED17F5EAD5A20934EE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PZFileUploaderDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BEC651C820AE7C6A009ABDD1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEC651D420AE7C6A009ABDD1 /* ViewController.m in Sources */,
+				BE13785B20DCEB0E00A606F5 /* PZFileTypeBase.m in Sources */,
+				BE13785820DCEAEA00A606F5 /* PZFileUploader.m in Sources */,
+				BEC651DF20AE7C6B009ABDD1 /* main.m in Sources */,
+				BE13785E20DCF4E600A606F5 /* PZUploadToken.m in Sources */,
+				BEC651D120AE7C6A009ABDD1 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BEC651DA20AE7C6B009ABDD1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BEC651DB20AE7C6B009ABDD1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BEC651E020AE7C6B009ABDD1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BEC651E120AE7C6B009ABDD1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BEC651E320AE7C6B009ABDD1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B37A05DBE70ACF38CC3E9F97 /* Pods-PZFileUploaderDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E8Y69BKJ78;
+				INFOPLIST_FILE = PZFileUploaderDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.muma.uploadDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BEC651E420AE7C6B009ABDD1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81AA3A97F222F7363B08B1AE /* Pods-PZFileUploaderDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E8Y69BKJ78;
+				INFOPLIST_FILE = PZFileUploaderDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.muma.uploadDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BEC651C720AE7C6A009ABDD1 /* Build configuration list for PBXProject "PZFileUploaderDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEC651E020AE7C6B009ABDD1 /* Debug */,
+				BEC651E120AE7C6B009ABDD1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BEC651E220AE7C6B009ABDD1 /* Build configuration list for PBXNativeTarget "PZFileUploaderDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEC651E320AE7C6B009ABDD1 /* Debug */,
+				BEC651E420AE7C6B009ABDD1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BEC651C420AE7C6A009ABDD1 /* Project object */;
+}
