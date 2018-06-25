@@ -14,6 +14,8 @@
 
 + (instancetype)shareSingleton;
 
+- (void)configTokenUrl:(NSString *)url forFileType:(Class)typeCls;
+
 - (void)uploadFile:(id)file ofType:(__kindof PZFileTypeBase *)type withParams:(__kindof NSDictionary *)params progressBlock:(PZFileUploaderProgressBlock)progress succBlock:(PZFileUploaderSuccBlock)succ failBlock:(PZFileUploaderFailBlock)fail;
 
 @end

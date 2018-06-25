@@ -16,7 +16,7 @@
 
 #import "PZUploadToken.h"
 
-#define kPZFileTypeBaseTokenType NSStringFromClass([self class])
+#define kPZFileTypeClassName NSStringFromClass([self class])
 
 @interface PZFileTypeBase ()
 
@@ -57,9 +57,8 @@
     }
 }
 
-#pragma mark - Private
 - (PZUploadToken *)getOneToken {
-    PZUploadToken *token = [PZUploadToken anyAvailabeTokenOfType:kPZFileTypeBaseTokenType];
+    PZUploadToken *token = [PZUploadToken anyAvailabeTokenOfType:kPZFileTypeClassName];
     if (token) {
         return token;
     } else {
@@ -67,22 +66,22 @@
         // 请求token 并添加到token池
         [self requestToken:^(BOOL succ, NSArray *tokens) {
             if (succ) {
-                [[PZUploadTokenPool poolOfType:kPZFileTypeBaseTokenType] addTokenFromArray:tokens];
+                [[PZUploadTokenPool poolOfType:kPZFileTypeClassName] addTokenFromArray:tokens];
             }
             dispatch_semaphore_signal(semaphore);
         }];
         
         dispatch_semaphore_wait(semaphore, DISPATCH_TIME_FOREVER);
-        token = [PZUploadToken anyAvailabeTokenOfType:kPZFileTypeBaseTokenType];
+        token = [PZUploadToken anyAvailabeTokenOfType:kPZFileTypeClassName];
     }
     return token;
 }
 
-- (void)requestToken:(void(^)(BOOL succ, NSArray *tokens))completion {
-    // TODO: 请求token，可以进行失败重试
+- (void)requestToken:(void(^)(BOOL succ, NSArray<PZUploadToken *> *tokens))completion {
+    // TODO: 通用的token请求流程，使用self.tokenUrl请求token 并转换为模型后执行completion
 }
 
-
+#pragma mark - Private
 - (void)qiniuUploadFile:(id)file withKey:(NSString *)key token:(NSString *)token option:(QNUploadOption *)option complete:(void(^)(NSString *uploadKey, BOOL uploadSucc, NSDictionary *info))completion {
     QNUploadManager *manager = [QNUploadManager sharedInstanceWithConfiguration:[QNConfiguration new]];
     

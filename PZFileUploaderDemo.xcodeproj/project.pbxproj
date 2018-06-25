@@ -10,6 +10,8 @@
 		BE13785820DCEAEA00A606F5 /* PZFileUploader.m in Sources */ = {isa = PBXBuildFile; fileRef = BE13785720DCEAEA00A606F5 /* PZFileUploader.m */; };
 		BE13785B20DCEB0E00A606F5 /* PZFileTypeBase.m in Sources */ = {isa = PBXBuildFile; fileRef = BE13785A20DCEB0E00A606F5 /* PZFileTypeBase.m */; };
 		BE13785E20DCF4E600A606F5 /* PZUploadToken.m in Sources */ = {isa = PBXBuildFile; fileRef = BE13785D20DCF4E600A606F5 /* PZUploadToken.m */; };
+		BE13786120E0C40600A606F5 /* PZFileTypeCrashLog.m in Sources */ = {isa = PBXBuildFile; fileRef = BE13786020E0C40600A606F5 /* PZFileTypeCrashLog.m */; };
+		BE13786420E0C43B00A606F5 /* PZFileTypeVideo.m in Sources */ = {isa = PBXBuildFile; fileRef = BE13786320E0C43B00A606F5 /* PZFileTypeVideo.m */; };
 		BEC651D120AE7C6A009ABDD1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BEC651D020AE7C6A009ABDD1 /* AppDelegate.m */; };
 		BEC651D420AE7C6A009ABDD1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEC651D320AE7C6A009ABDD1 /* ViewController.m */; };
 		BEC651D920AE7C6B009ABDD1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEC651D820AE7C6B009ABDD1 /* Assets.xcassets */; };
@@ -27,6 +29,10 @@
 		BE13785A20DCEB0E00A606F5 /* PZFileTypeBase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PZFileTypeBase.m; sourceTree = "<group>"; };
 		BE13785C20DCF4E600A606F5 /* PZUploadToken.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PZUploadToken.h; sourceTree = "<group>"; };
 		BE13785D20DCF4E600A606F5 /* PZUploadToken.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PZUploadToken.m; sourceTree = "<group>"; };
+		BE13785F20E0C40600A606F5 /* PZFileTypeCrashLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PZFileTypeCrashLog.h; sourceTree = "<group>"; };
+		BE13786020E0C40600A606F5 /* PZFileTypeCrashLog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PZFileTypeCrashLog.m; sourceTree = "<group>"; };
+		BE13786220E0C43B00A606F5 /* PZFileTypeVideo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PZFileTypeVideo.h; sourceTree = "<group>"; };
+		BE13786320E0C43B00A606F5 /* PZFileTypeVideo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PZFileTypeVideo.m; sourceTree = "<group>"; };
 		BEC651CC20AE7C6A009ABDD1 /* PZFileUploaderDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PZFileUploaderDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEC651CF20AE7C6A009ABDD1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BEC651D020AE7C6A009ABDD1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -68,6 +74,10 @@
 				BE13785D20DCF4E600A606F5 /* PZUploadToken.m */,
 				BE13785920DCEB0E00A606F5 /* PZFileTypeBase.h */,
 				BE13785A20DCEB0E00A606F5 /* PZFileTypeBase.m */,
+				BE13785F20E0C40600A606F5 /* PZFileTypeCrashLog.h */,
+				BE13786020E0C40600A606F5 /* PZFileTypeCrashLog.m */,
+				BE13786220E0C43B00A606F5 /* PZFileTypeVideo.h */,
+				BE13786320E0C43B00A606F5 /* PZFileTypeVideo.m */,
 			);
 			path = Uploader;
 			sourceTree = "<group>";
@@ -220,6 +230,8 @@
 				BEC651DF20AE7C6B009ABDD1 /* main.m in Sources */,
 				BE13785E20DCF4E600A606F5 /* PZUploadToken.m in Sources */,
 				BEC651D120AE7C6A009ABDD1 /* AppDelegate.m in Sources */,
+				BE13786120E0C40600A606F5 /* PZFileTypeCrashLog.m in Sources */,
+				BE13786420E0C43B00A606F5 /* PZFileTypeVideo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

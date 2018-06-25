@@ -13,6 +13,8 @@ static NSInteger const kPZUploadTaskLimitMax = 5;
 
 @interface PZFileUploader ()
 
+@property (nonatomic, strong) NSMutableDictionary<NSString *, NSString *> *tokenUrlDic;
+
 @property (nonatomic) dispatch_queue_t uploadTaskQueue;   /**< 上传队列 */
 @property (nonatomic) dispatch_semaphore_t uploadLock;  /**< 限制同时进行的任务数量 */
 
@@ -37,7 +39,28 @@ static NSInteger const kPZUploadTaskLimitMax = 5;
     return self;
 }
 
+- (void)configTokenUrl:(NSString *)url forFileType:(Class)typeCls {
+    
+    if ((url != nil && ![url isKindOfClass:[NSString class]])
+        || ![typeCls isSubclassOfClass:NSClassFromString(@"PZFileTypeBase")]) {
+        return;
+    }
+    if (!_tokenUrlDic) {
+        _tokenUrlDic = [NSMutableDictionary new];
+    }
+    NSString *key = NSStringFromClass(typeCls);
+    if (url == nil || [url isEqualToString:@""]) {
+        [_tokenUrlDic removeObjectForKey:key];
+    } else if (url.length > 0) {
+        [_tokenUrlDic setValue:url forKey:key];
+    }
+}
+
 - (void)uploadFile:(id)file ofType:(__kindof PZFileTypeBase *)type withParams:(__kindof NSDictionary *)params progressBlock:(PZFileUploaderProgressBlock)progress succBlock:(PZFileUploaderSuccBlock)succ failBlock:(PZFileUploaderFailBlock)fail {
+    // 配置token请求的url
+    if (type.tokenUrl == nil) {
+        type.tokenUrl = [_tokenUrlDic objectForKey:NSStringFromClass([type class])];
+    }
     __weak typeof(self) weakSelf = self;
     dispatch_async(_uploadTaskQueue, ^{
         typeof(weakSelf) strongSelf = weakSelf;

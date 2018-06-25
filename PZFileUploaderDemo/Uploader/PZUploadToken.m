@@ -61,13 +61,25 @@
 @end
 
 
-@interface PZUploadTokenPool ()
+@interface PZUploadTokenPool () {
+    pthread_mutex_t poolLock;
+}
 
 @property (nonatomic, strong) NSMutableArray<PZUploadToken *> *container;
-
 @end
 
 @implementation PZUploadTokenPool
+
+- (instancetype)init {
+    if (self = [super init]) {
+        pthread_mutex_init(&poolLock, nil);
+    }
+    return self;
+}
+
+- (void)dealloc {
+    pthread_mutex_destroy(&poolLock);
+}
 
 + (instancetype)poolOfType:(NSString *)type {
     return [[PZUploadTokenPoolManager shareSingleton] poolOfKey:type];
@@ -81,6 +93,7 @@
     __block NSMutableArray<PZUploadToken *> *delArray = [NSMutableArray array];
     __block PZUploadToken *availableToken;
     NSTimeInterval currentTiem = [[NSDate date] timeIntervalSince1970] - 1; // 当前时间
+    pthread_mutex_lock(&poolLock);
     [_container enumerateObjectsUsingBlock:^(PZUploadToken * _Nonnull token, NSUInteger idx, BOOL * _Nonnull stop) {
         if ([token isKindOfClass:[PZUploadToken class]] && token.expiration < currentTiem) {
             // token有效
@@ -92,26 +105,36 @@
     }];
     
     [_container removeObjectsInArray:delArray];
+    pthread_mutex_unlock(&poolLock);
     
     return availableToken;
 }
 
 - (void)addToken:(PZUploadToken *)token {
+    pthread_mutex_lock(&poolLock);
     if (_container == nil) {
         _container = [NSMutableArray array];
     }
     [_container addObject:token];
+    pthread_mutex_unlock(&poolLock);
 }
 
 - (void)removeToken:(PZUploadToken *)token {
+    pthread_mutex_lock(&poolLock);
     [_container removeObject:token];
+    pthread_mutex_unlock(&poolLock);
 }
 
 - (void)addTokenFromArray:(NSArray<PZUploadToken *> *)array {
+    pthread_mutex_lock(&poolLock);
     [_container addObjectsFromArray:array];
+    pthread_mutex_unlock(&poolLock);
 }
+
 - (void)removeTokenInArray:(NSArray<PZUploadToken *> *)array {
+    pthread_mutex_lock(&poolLock);
     [_container removeObjectsInArray:array];
+    pthread_mutex_unlock(&poolLock);
 }
 
 @end
