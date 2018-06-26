@@ -2,7 +2,7 @@
 //  PZFileUploader.m
 //  PZFileUploaderDemo
 //
-//  Created by pany on 2018/6/22.
+//  Created by Pany on 2018/6/22.
 //  Copyright © 2018年 Pany. All rights reserved.
 //
 
