@@ -65,3 +65,4 @@ Podfile.lock
 Manifest.lock
 Pods
 contents.xcworkspacedata
+IDEWorkspaceChecks.plist
